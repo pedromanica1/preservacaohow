@@ -40,29 +40,25 @@ function UnidadeDetalhe() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="relative h-72 overflow-hidden">
-        <img
-          src={u.imagem}
-          alt={u.nome}
-          className="h-full w-full object-cover"
-          width={1024}
-          height={640}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, oklch(0 0 0 / 0.1), oklch(0 0 0 / 0.7))",
-          }}
-        />
-        <div className="absolute inset-x-0 bottom-0 mx-auto max-w-5xl px-6 pb-6 text-primary-foreground">
+      <div
+        className="relative"
+        style={{ background: "var(--gradient-hero)" }}
+      >
+        <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-10 text-primary-foreground">
           <Link
             to="/"
-            className="mb-3 inline-flex items-center gap-1 text-sm opacity-90 hover:opacity-100"
+            className="self-start inline-flex items-center gap-1 text-sm opacity-90 hover:opacity-100"
           >
             <ArrowLeft className="h-4 w-4" /> Voltar
           </Link>
-          <h1 className="text-3xl font-bold md:text-4xl">{u.nome}</h1>
+          <img
+            src={u.imagem}
+            alt={u.nome}
+            className="h-40 w-auto rounded-lg bg-background/90 p-3"
+          />
+          <h1 className="text-center text-2xl font-bold md:text-3xl">
+            {u.nome}
+          </h1>
         </div>
       </div>
 
@@ -77,8 +73,7 @@ function UnidadeDetalhe() {
                 <MapPin className="h-4 w-4" /> {u.municipios.join(", ")}
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <Calendar className="h-4 w-4" />{" "}
-                {new Date(u.dataCriacao).toLocaleDateString("pt-BR")}
+                <Calendar className="h-4 w-4" /> {u.dataCriacao}
               </span>
             </div>
             <p className="mt-6 text-base leading-relaxed text-foreground">
