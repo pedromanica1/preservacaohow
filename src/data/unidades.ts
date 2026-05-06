@@ -1,7 +1,7 @@
 import logoAcarai from "@/assets/logo-acarai.png";
 import logoAguai from "@/assets/logo-aguai.png";
 import logoAraucarias from "@/assets/logo-araucarias.png";
-import logoCanela from "@/assets/logo-canela-preta.png";
+import logoCanela from "@/assets/canela-preta.jpg";
 
 export type Unidade = {
   id: string;
