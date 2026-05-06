@@ -56,12 +56,12 @@ function Home() {
               className="group overflow-hidden rounded-xl bg-card transition-transform hover:-translate-y-1"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <div className="flex aspect-[16/10] items-center justify-center overflow-hidden bg-secondary/40 p-6">
+              <div className="aspect-[16/10] overflow-hidden bg-secondary/40">
                 <img
                   src={u.imagem}
                   alt={u.nome}
                   loading="lazy"
-                  className="h-full w-auto max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-5">
