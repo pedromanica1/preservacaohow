@@ -73,8 +73,7 @@ function UnidadeDetalhe() {
                 <MapPin className="h-4 w-4" /> {u.municipios.join(", ")}
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <Calendar className="h-4 w-4" />{" "}
-                {new Date(u.dataCriacao).toLocaleDateString("pt-BR")}
+                <Calendar className="h-4 w-4" /> {u.dataCriacao}
               </span>
             </div>
             <p className="mt-6 text-base leading-relaxed text-foreground">
