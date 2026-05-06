@@ -1,4 +1,4 @@
-import logoAcarai from "@/assets/logo-acarai.png";
+import logoAcarai from "@/assets/acarai-foto.jpg";
 import logoAguai from "@/assets/logo-aguai.png";
 import logoAraucarias from "@/assets/logo-araucarias.png";
 import logoCanela from "@/assets/canela-preta.jpg";
