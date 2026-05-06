@@ -56,14 +56,12 @@ function Home() {
               className="group overflow-hidden rounded-xl bg-card transition-transform hover:-translate-y-1"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <div className="aspect-[16/10] overflow-hidden">
+              <div className="flex aspect-[16/10] items-center justify-center overflow-hidden bg-secondary/40 p-6">
                 <img
                   src={u.imagem}
                   alt={u.nome}
-                  width={1024}
-                  height={640}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-auto max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-5">
@@ -83,7 +81,7 @@ function Home() {
                   </span>
                   <span className="inline-flex items-center gap-1">
                     <Calendar className="h-3.5 w-3.5" />
-                    {new Date(u.dataCriacao).toLocaleDateString("pt-BR")}
+                    {u.dataCriacao}
                   </span>
                 </div>
               </div>
