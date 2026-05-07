@@ -65,7 +65,9 @@ export function UnidadeDetail({ unidade }: { unidade: Unidade }) {
           </section>
 
           <ComunicacaoForm
-            onSubmit={(payload) => criarMutation.mutateAsync(payload)}
+            onSubmit={async (payload) => {
+              await criarMutation.mutateAsync(payload);
+            }}
             enviando={criarMutation.isPending}
           />
         </div>
